@@ -10,6 +10,7 @@ export default defineConfig({
   build: {
     outDir: 'build',
     sourcemap: false,
+    minify: 'esbuild',
   },
   test: {
     globals: true,
