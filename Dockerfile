@@ -9,6 +9,8 @@ RUN npm install
 
 COPY . .
 
+ENV NODE_OPTIONS=--max-old-space-size=4096
+
 RUN npm run build
 
 # Stage 2: Serve React Application with Nginx
